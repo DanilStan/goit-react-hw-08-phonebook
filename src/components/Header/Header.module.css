@@ -1,33 +1,69 @@
 .header {
-  background: rgba(40, 46, 79, 0.2);
+  background: white;
 }
 .nav {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
+.title {
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  color: rgb(23, 25, 51);
+  font-size: 40px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.title:hover,
+.title:focus {
+  color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
 .navLink {
-  margin-bottom: 8px;
-  color: rgb(220, 231, 255);
+  position: relative;
+  z-index: 1;
+  color: rgb(23, 25, 51);
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navLink:hover,
+.navLink:focus {
+  color: white;
 }
 
 .active {
   font-size: 22px;
   font-weight: 900;
   text-transform: uppercase;
-  color: rgb(220, 231, 255);
-  border-bottom: 1px solid rgb(220, 231, 255);
+  color: white;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active:hover,
+.active:focus {
+  color: rgb(23, 25, 51);
 }
 
 .page {
+  position: relative;
+  z-index: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
 }
 
@@ -38,5 +74,7 @@
 }
 
 .log {
-  text-align: end;
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
 }

@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { fetchCurrentUser } from 'redux/auth/auth-operations';
@@ -31,20 +31,18 @@ export const App = () => {
       <Header />
       <main>
         <Suspense>
-          <Router basename="/goit-react-hw-08-phonebook">
-            <Routes>
-              <Route path="/" element={<Home />} />
+          <Routes>
+            <Route path="/" element={<Home />} />
 
-              <Route path="/" element={<PrivateRoute />}>
-                <Route path="/contacts" element={<ContactsPage />} />
-              </Route>
+            <Route path="/" element={<PrivateRoute />}>
+              <Route path="/contacts" element={<ContactsPage />} />
+            </Route>
 
-              <Route path="/" element={<PublicRoute />}>
-                <Route path="/registration" element={<Register />} />
-                <Route path="/login" element={<Login />} />
-              </Route>
-            </Routes>
-          </Router>
+            <Route path="/" element={<PublicRoute />}>
+              <Route path="/registration" element={<Register />} />
+              <Route path="/login" element={<Login />} />
+            </Route>
+          </Routes>
         </Suspense>
       </main>
       <ToastContainer

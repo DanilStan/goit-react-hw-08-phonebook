@@ -5,7 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(to right, #373b44, #4286f4);
+  background-color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: rgb(23, 25, 51);
 }
 img {
   display: block;

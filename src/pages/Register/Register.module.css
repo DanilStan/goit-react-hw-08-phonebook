@@ -1,0 +1,9 @@
+.circle {
+  position: absolute;
+  top: -450px;
+  left: -400px;
+  border-radius: 50%;
+  width: 800px;
+  height: 800px;
+  background-color: #ff4b4b;
+}

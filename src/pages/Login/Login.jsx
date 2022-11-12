@@ -35,38 +35,36 @@ export default function Login() {
   return (
     <Box>
       <div className={css.box}>
-        <h2>Please login to continue</h2>
+        <h2 className={css.title}>Please login to continue</h2>
 
         <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
-          <label className={css.label}>
-            Email
-            <input
-              type="email"
-              name="email"
-              value={email}
-              onChange={handleChange}
-              className={css.full}
-            />
-          </label>
+          <input
+            type="email"
+            name="email"
+            value={email}
+            onChange={handleChange}
+            className={css.full}
+            placeholder="Email"
+          />
 
-          <label className={css.label}>
-            Password
-            <input
-              type="password"
-              name="password"
-              value={password}
-              onChange={handleChange}
-              className={css.full}
-            />
-          </label>
+          <input
+            type="password"
+            name="password"
+            value={password}
+            onChange={handleChange}
+            className={css.full}
+            placeholder="Password"
+          />
+
           <Link className={css.text} to="/registration">
             Dont have account?
           </Link>
           <button className={css.add} type="submit">
-            Go!
+            Log in
           </button>
         </form>
       </div>
+      <span className={css.circle}></span>
     </Box>
   );
 }
