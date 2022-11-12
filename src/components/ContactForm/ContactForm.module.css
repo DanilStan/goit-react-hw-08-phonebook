@@ -3,43 +3,53 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border: 1px solid rgb(220, 231, 255);
   margin-bottom: 20px;
-}
-
-.label {
-  margin-bottom: 8px;
-  color: rgb(220, 231, 255);
-  font-size: 22px;
-  font-weight: 500;
 }
 
 .full {
   margin-bottom: 15px;
+  padding-left: 12px;
   width: 416px;
-  height: 25px;
+  height: 35px;
   background: transparent;
   outline: none;
-  border: 1px solid rgb(220, 231, 255);
+  border: none;
+  border-radius: 10px;
   font-size: 18px;
-  color: rgb(220, 231, 255);
+  background-color: #ff4b4b;
+  color: white;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.full:hover {
+  background-color: rgb(23, 25, 51);
+  color: #ff4b4b;
+}
+
+.full::placeholder {
+  color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .add {
-  margin-bottom: 15px;
-  color: rgb(220, 231, 255);
-  background: #283657;
+  margin: 0 auto 15px auto;
+  color: white;
+  background: #ff4b4b;
   border: none;
-  width: 150px;
+  width: 100px;
   height: 30px;
-  text-transform: uppercase;
   cursor: pointer;
-
-  transition-property: background-color;
-  transition-duration: 300ms;
+  font-size: 15px;
+  border-radius: 20px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .add:hover {
-  background-color: #667db3;
+  background-color: rgb(23, 25, 51);
+  color: #ff4b4b;
 }

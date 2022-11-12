@@ -1,4 +1,29 @@
 .box {
   width: 450px;
   margin: 0 auto;
+  margin-top: -140px;
+}
+
+.box h1 {
+  text-transform: none;
+}
+
+.title {
+  text-transform: none;
+  color: rgb(23, 25, 51);
+}
+
+.title__secondary {
+  text-decoration: none;
+  color: rgb(23, 25, 51);
+}
+
+.circle {
+  position: absolute;
+  top: -450px;
+  left: -400px;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background-color: #ff4b4b;
 }

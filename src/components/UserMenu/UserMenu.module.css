@@ -1,7 +1,10 @@
 .box {
+  position: relative;
+  z-index: 1;
   display: flex;
   min-width: 300px;
-  justify-content: flex-end;
+  margin-top: 20px;
+  justify-content: flex-start;
 }
 
 .miniBox {
@@ -17,25 +20,26 @@
 
 .name {
   margin-bottom: 8px;
-  color: rgb(220, 231, 255);
-  font-size: 18px;
+  color: rgb(23, 25, 51);
+  font-size: 20px;
   font-weight: 400;
 }
 
 .exit {
-  color: rgb(220, 231, 255);
-  background: #283657;
+  color: #ff4b4b;
+  background: rgb(23, 25, 51);
   border: none;
   width: 100px;
-  height: 24px;
-  text-transform: uppercase;
+  height: 30px;
   cursor: pointer;
+  border-radius: 20px;
   margin-top: 6px;
   transition-property: background-color;
-  transition-duration: 300ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.exit:hover {
-  background-color: #667db3;
+.exit:hover,
+.exit:focus {
+  background-color: white;
 }

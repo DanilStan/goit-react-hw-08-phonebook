@@ -1,16 +1,30 @@
-.full {
-  margin-top: 8px;
-  margin-bottom: 15px;
-  width: 100%;
-  height: 25px;
-  background: transparent;
-  outline: none;
-  border: 1px solid rgb(220, 231, 255);
-  font-size: 18px;
-  color: rgb(220, 231, 255);
+.box {
+  padding: 15px 15px 0 15px;
 }
 
-.label {
-  color: rgb(220, 231, 255);
+.full {
+  margin-bottom: 15px;
+  padding-left: 12px;
+  width: 416px;
+  height: 35px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-radius: 10px;
   font-size: 18px;
+  background-color: #ff4b4b;
+  color: white;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.full:hover {
+  background-color: rgb(23, 25, 51);
+  color: #ff4b4b;
+}
+
+.full::placeholder {
+  color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }

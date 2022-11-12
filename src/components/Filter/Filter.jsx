@@ -13,15 +13,15 @@ export const Filter = () => {
   };
 
   return (
-    <label className={css.label}>
-      Find contacts by name
+    <div className={css.box}>
       <input
         className={css.full}
         type="text"
         name="filter"
         value={filter}
         onChange={handleFilter}
+        placeholder="Find contacts by name"
       />
-    </label>
+    </div>
   );
 };

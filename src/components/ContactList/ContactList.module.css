@@ -6,21 +6,28 @@
   margin-bottom: 16px;
 }
 
-.btn {
-  color: rgb(220, 231, 255);
-  background: #283657;
-  border: none;
-  width: 80px;
-  height: 20px;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-size: 10px;
+.item p {
+  margin-left: 25px;
+  color: #ff4b4b;
+}
 
-  transition-property: background-color;
+.btn {
+  color: white;
+  background: #ff4b4b;
+  border: none;
+  width: 65px;
+  height: 25px;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 20px;
+
+  transition-property: background-color, color;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn:hover {
-  background-color: #667db3;
+.btn:hover,
+.btn:focus {
+  background-color: rgb(23, 25, 51);
+  color: #ff4b4b;
 }

@@ -7,10 +7,11 @@ import css from './ContactsPage.module.css';
 export default function ContactsPage() {
   return (
     <Box>
+      <span className={css.circle}></span>
       <div className={css.box}>
-        <h1>Phonebook</h1>
+        <h1 className={css.title}>Phonebook</h1>
         <ContactForm />
-        <h2>Contacts</h2>
+        <h2 className={css.title__secondary}>Contacts</h2>
         <Filter />
         <ContactList />
       </div>
