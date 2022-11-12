@@ -49,54 +49,46 @@ export const RegistrationForm = () => {
   return (
     <Box>
       <div className={css.box}>
-        <h2>Please register to continue</h2>
+        <h2 className={css.title}>Please register to continue</h2>
         <form className={css.form} onSubmit={handleFormSubmit}>
-          <label className={css.label}>
-            Name
-            <input
-              required
-              onChange={handleInput}
-              name="name"
-              value={name}
-              type="text"
-              className={css.full}
-            />
-          </label>
-          <label className={css.label}>
-            Email
-            <input
-              required
-              onChange={handleInput}
-              name="email"
-              value={email}
-              type="email"
-              className={css.full}
-            />
-          </label>
-          <label className={css.label}>
-            Password
-            <input
-              required
-              onChange={handleInput}
-              name="password"
-              value={password}
-              type="password"
-              className={css.full}
-            />
-          </label>
-          <label className={css.label}>
-            Repeat the password
-            <input
-              required
-              onChange={handleInput}
-              name="repPassword"
-              value={repPassword}
-              type="password"
-              className={css.full}
-            />
-          </label>
+          <input
+            required
+            onChange={handleInput}
+            name="name"
+            value={name}
+            type="text"
+            className={css.full}
+            placeholder="Name"
+          />
+          <input
+            required
+            onChange={handleInput}
+            name="email"
+            value={email}
+            type="email"
+            className={css.full}
+            placeholder="Email"
+          />
+          <input
+            required
+            onChange={handleInput}
+            name="password"
+            value={password}
+            type="password"
+            className={css.full}
+            placeholder="Password"
+          />
+          <input
+            required
+            onChange={handleInput}
+            name="repPassword"
+            value={repPassword}
+            type="password"
+            className={css.full}
+            placeholder="Repeat password"
+          />
           <Link className={css.text} to="/login">
-            Already has account?
+            Has account?
           </Link>
           <button className={css.add} type="submit">
             Sign up
